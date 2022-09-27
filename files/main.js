@@ -39,6 +39,16 @@ var updateMenu = function() {
     // Set/remove active class
     menuItems.parent().removeClass("active")
         .end().filter("[href='#" + id + "']").parent().addClass("active");
+
+    var $activityBoxes = $(".activity-box");
+
+    function shouldBeHighlighted(x) {
+        return ($(this).offset().top > fromTop) && (($(this).offset().top + $(this).height()) <= fromTop + $(window).height());
+    }
+
+    var highlited = $activityBoxes.filter(shouldBeHighlighted);
+    $activityBoxes.removeClass("highlighted");
+    highlited.addClass("highlighted");
 };
 
 var showMoreProjects = function() {

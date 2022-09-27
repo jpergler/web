@@ -205,16 +205,19 @@ section {
         border-radius: 10px;
     }
 
-        #what-i-do .activity-box:hover {
+        #what-i-do .activity-box:hover,
+        #what-i-do .activity-box.highlighted {
             background-color: white;
             transform: scale(1.02, 1.02);
         }
 
-        #what-i-do .activity-box:hover h3 {
+        #what-i-do .activity-box:hover h3,
+        #what-i-do .activity-box.highlighted h3 {
             color: var(--primary-color);
         }
 
-        #what-i-do .activity-box:hover p {
+        #what-i-do .activity-box:hover p,
+        #what-i-do .activity-box.highlighted p {
             color: var(--primary-color-dark);
         }
 
