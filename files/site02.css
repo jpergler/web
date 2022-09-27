@@ -104,6 +104,13 @@ a {
         font-weight: normal;
     }
 
+    a.btn-link {
+        color: #E01616;
+    }
+    a.btn-link:hover {
+    color: #b80e0e;
+    }
+
 section {
     padding: 3em 0;
 }

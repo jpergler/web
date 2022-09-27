@@ -40,6 +40,16 @@ var updateMenu = function() {
     menuItems.parent().removeClass("active")
         .end().filter("[href='#" + id + "']").parent().addClass("active");
 };
+
+var showMoreProjects = function() {
+    $(".more-projects").removeClass("hidden");
+    $(".show-more-projects-link").addClass("hidden");
+}
+
+var hideMoreProjects = function() {
+    $(".more-projects").addClass("hidden");
+    $(".show-more-projects-link").removeClass("hidden");
+}
     
 $(window).scroll(updateMenu);
 $(window).ready(updateMenu);
