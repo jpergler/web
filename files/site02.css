@@ -1,0 +1,515 @@
+@import url("./fonts.css");
+
+body {
+    padding-top: 50px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, body {
+    font-family: "Neris", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+.navbar-default .navbar-brand {
+    color: #000;
+    font-size: 110%;
+}
+
+.navbar-default {
+    background: #fff;
+    border-bottom: none;
+    box-shadow: 0 0 1.5em rgba(0,0,0,.1);
+    font-size: 1.4em;
+}
+
+    .navbar-default .navbar-nav a {
+        transition: background .5s, border-color .5s;
+        font-weight: 400;
+        border-bottom: solid .2em #fff;
+    }
+
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        background: #f6f6f6;
+        color: #e01616;
+        border-bottom-color: #e01616;
+    }
+
+@media only screen and (max-width : 992px) {
+    .navbar-default {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .navbar-default .navbar-nav a {
+        border-bottom: none;
+    }
+
+    .navbar-default .navbar-brand .divider {
+        display: none;
+    }
+
+    .subtitle {
+        display: block;
+        font-size: 80%;
+        margin-top: .2em;
+    }
+}
+
+
+/*  FF2900 */
+
+h2 {
+    font-weight: 100;
+    font-size: 4em;
+    text-align: center;
+    margin: .4em 0;
+}
+
+a {
+    color: #E01616;
+    border-bottom: solid 2px transparent;
+    transition: all .1s ease-in-out;
+    font-weight: bolder;
+}
+
+    a:hover {
+        color: #9b0b0b;
+        text-decoration: none;
+        border-color: #9b0b0b;
+    }
+
+    #intro a,
+    a.navbar-brand {
+        border: none;
+        font-weight: normal;
+    }
+
+section {
+    padding: 3em 0;
+}
+
+#intro {
+    background: #fff;
+    text-align: center;
+    min-height: calc(100vh - 50px);
+}
+
+.profilePhoto {
+    background: url('img/jindrich-pergler.jpg') bottom center no-repeat;
+    background-size: contain;
+    border-bottom: solid 2px #000;
+    margin-top: 15vh;
+    height: 40vh;
+}
+
+
+#intro h1 {
+    font-size: 7vh;
+    font-weight: 300;
+    margin: 2.5vh 0;
+}
+
+#intro .subtitle {
+    font-weight: bold;
+    color: #e01616;
+    font-size: 4vh;
+}
+
+.showMore {
+    display: inline-block;
+    width: calc(1em + 5vh);
+    height: calc(1em + 5vh);
+    margin-top: calc(-1em + 5vh);
+    background: url('img/arrow-down.svg') top center no-repeat;
+    background-size: cover;
+    line-height: 1000em;
+    overflow: hidden;
+    transition: transform .1s ease-in-out;
+}
+
+    .showMore:hover {
+        transform: scale(1.1);
+    }
+
+
+#what-i-do {
+    background: #4F1111;
+    background: #ba4242;
+    color: white;
+    text-align: center;
+}
+
+
+    #what-i-do h3 {
+        font-size: 2.2em;
+        margin: .5em 0;
+        color: #F1D6A0;
+    }
+
+    #what-i-do p {
+        font-size: 1.3em;
+    }
+
+    #what-i-do .activity-box {
+        transition: all .1s ease-in-out;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 10px;
+    }
+
+        #what-i-do .activity-box:hover {
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+            transform: scale(1.02, 1.02);
+        }
+
+
+#projects {
+    background: #FFEFD0;
+    background-size: cover;
+    height: auto;
+}
+
+    #projects .container-box {
+        background: #fff;
+        padding: 1em;
+        margin: 5em 0;
+    }
+
+.projectBox {
+    background: rgba(255, 255, 255, .9);
+    border-radius: .3em;
+    color: #000;
+    padding: 2em;
+    margin: .8em 0;
+    position: relative;
+    font-size: 1.1em;
+    transition: all .1s ease-in-out;
+    text-align: center;
+}
+
+
+
+    .projectBox:hover {
+        transform: scale(1.03);
+        background: #fff;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    }
+
+    .projectBox h3 {
+        margin: 0;
+        font-weight: 300;
+        font-size: 3em;
+        text-align: center;
+        color: #E01616;
+    }
+
+    .projectBox p {
+        font-size: 1.6em;
+        margin: 1em 0;
+    }
+
+    .projectBox .tags {
+        margin: .1em 0;
+        font-size: 1.3em;
+    }
+
+        .projectBox .tags span,
+        .former-project-experience .tags span {
+            padding: .15em .30em;
+            margin: .1em 0;
+            color: #e01616;
+            display: inline-block;
+            border-radius: .3em;
+            background: rgba(224, 22, 22, 0.1);
+            transition: all .1s ease-in-out;
+        }
+
+.former-project-experience {
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .projectBox h3 {
+        font-size: 2.2em;
+    }
+
+    .projectBox p {
+        font-size: 1.3em;
+    }
+
+    .projectBox:hover {
+        transform: scale(1.01);
+    }
+}
+
+
+#technologies {
+    background: #ba4242;
+    background: #4F1111;
+    background-size: cover;
+    color: #eee;
+}
+
+    #technologies h2 {
+        color: #fff;
+    }
+
+.technologyBox {
+    margin-top: 4vh;
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 1em;
+}
+
+    .technologyBox .technology {
+        display: inline-block;
+        padding: .20em .40em;
+        margin: .40em .35em;
+        border-radius: .3em;
+        background: #fff;
+        color: #790000;
+        font-size: 1.1em;
+        font-weight: bold;
+        box-shadow: 0 0 .2em rgba(0, 0, 0, .30);
+        transition: transform .1s ease-in-out;
+    }
+
+        .technologyBox .technology:hover {
+            transform: scale(1.05);
+        }
+
+.technology.level5 {
+    font-size: 2.20em;
+}
+
+.technology.level4 {
+    font-size: 1.70em;
+}
+
+.technology.level3 {
+    font-size: 1.40em;
+}
+
+.technology.level2 {
+    font-size: 1.15em;
+}
+
+.technology.level1 {
+    font-size: 1.10em;
+}
+
+.technology.deprecated {
+    font-size: .9em;
+}
+
+
+
+@media (max-width: 991px) {
+    .technologyBox {
+        margin-top: 4vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .technologyBox {
+        margin-top: 0;
+    }
+}
+
+
+#bio {
+    text-align: center;
+}
+
+    #bio .container {
+        font-size: 1.6em;
+    }
+
+    #bio h3 {
+        margin: 1em 0 .6em;
+        font-size: 2em;
+    }
+
+    #bio img.photo-image {
+        width: 350px;
+    }
+
+    #bio a.photo-link {
+        border: none;
+        display: inline-block;
+        padding: .5em;
+        margin: 1em 0;
+        border-radius: 10px;
+        background-color: #f6f6f6;
+    }
+
+    #bio a.photo-link:hover {
+        border: none;
+        transform: scale(1.05, 1.05);
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+    }
+
+
+#contact {
+    background: #FDB071;
+    text-align: center;
+}
+
+
+    #contact .contact-items {
+        font-size: 1.8em;
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, .3);
+        transition: all .1s ease-in-out;
+    }
+
+        #contact .contact-items:hover {
+            transform: scale(1.03, 1.03);
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+        }
+
+    #contact h3 {
+        font-size: 1.8em;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    #contact .links {
+        margin: 15px 0;
+    }
+
+        #contact .links a {
+            background: url("linkedin.svg") top left no-repeat;
+            background-size: contain;
+            line-height: 1000rem;
+            overflow: hidden;
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            border: none;
+            transition: transform .1s ease-in-out;
+        }
+
+        #contact .links a:hover {
+            transform: scale(1.1);
+        }
+
+        #contact .links .xing {
+            background-image: url("xing.svg");
+        }
+        #contact .links .cv {
+            background-image: url("pdf-cv.svg");
+        }
+
+    #contact .subtitle {
+        font-weight: bolder;
+        font-size: 1.3em;
+        color: #E01616;
+    }
+
+    #contact .email,
+    #contact .identification {
+        margin-top: 15px;
+    }
+
+    #contact p {
+        font-size: 1.4em;
+    }
+
+        #contact p a {
+            color: #E01616
+        }
+
+.contact-form {
+    padding: 2em;
+    border-radius: 10px;
+    font-size: calc(.7em + 1.5vh);
+    text-align: left
+}
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 100%;
+        height: auto;
+        border-width: .1em;
+        box-shadow: none;
+        border-radius: 2px;
+        border-color: #fff;
+        transition: all .1s ease-in-out;
+    }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            box-shadow: none;
+            border-color: #333;
+        }
+
+    .contact-form label {
+        color: #333;
+        font-weight: 400;
+    }
+
+    .contact-form .error {
+        color: #9d0000;
+    }
+
+.contact-form-success-message,
+.contact-form-failure-message {
+    font-size: 2em;
+    color: #fff;
+    padding: 10vh 7vw;
+    border-radius: .5em;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.contact-form-success-message {
+    background: #619d00;
+}
+
+.contact-form-failure-message {
+    background: #9d0000;
+}
+
+    .contact-form-failure-message a {
+        color: #F1D6A0;
+    }
+
+        .contact-form-failure-message a:hover {
+            color: white;
+            border-color: white;
+        }
+
+
+
+
+footer {
+    background: #4F1111;
+    color: #f4eaea;
+    text-align: center;
+    padding: 1rem 0;
+}
