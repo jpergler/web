@@ -162,12 +162,14 @@ section {
 
     #what-i-do h3 {
         font-size: 2.2em;
+        font-weight: bold;
         margin: .5em 0;
         color: #F1D6A0;
     }
 
     #what-i-do p {
         font-size: 1.3em;
+        font-weight: 100;
     }
 
     #what-i-do .activity-box {
