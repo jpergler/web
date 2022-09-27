@@ -1,5 +1,11 @@
 @import url("./fonts.css");
 
+:root {
+    --primary-color: #e01616;
+    --primary-color-dark: #4f1111;
+    --secondary-color: #ba4242;
+}
+
 body {
     padding-top: 50px;
 }
@@ -21,6 +27,11 @@ body {
 
 h1, h2, h3, h4, h5, h6, body {
     font-family: "Neris", Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    font-size: 2.2em;
+    font-weight: bold;
 }
 
 
@@ -160,8 +171,7 @@ section {
 
 
 #what-i-do {
-    background: #4F1111;
-    background: #ba4242;
+    background: var(--primary-color-dark);
     color: white;
     text-align: center;
 }
@@ -171,24 +181,33 @@ section {
         font-size: 2.2em;
         font-weight: bold;
         margin: .5em 0;
-        color: #F1D6A0;
+        color: white
     }
 
     #what-i-do p {
         font-size: 1.3em;
         font-weight: 100;
+        color: rgba(255, 255, 255, 0.8);
     }
 
     #what-i-do .activity-box {
         transition: all .1s ease-in-out;
-        padding: 10px;
-        margin: 5px 0;
+        padding: 1rem 2rem;
+        margin: 2rem 0;
         border-radius: 10px;
     }
 
         #what-i-do .activity-box:hover {
-            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+            background-color: white;
             transform: scale(1.02, 1.02);
+        }
+
+        #what-i-do .activity-box:hover h3 {
+            color: var(--primary-color);
+        }
+
+        #what-i-do .activity-box:hover p {
+            color: var(--primary-color-dark);
         }
 
 
@@ -208,7 +227,7 @@ section {
     background: rgba(255, 255, 255, .9);
     border-radius: .3em;
     color: #000;
-    padding: 2em;
+    padding: 2.5em 2em;
     margin: .8em 0;
     position: relative;
     font-size: 1.1em;
@@ -221,20 +240,18 @@ section {
     .projectBox:hover {
         transform: scale(1.03);
         background: #fff;
-        box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+        
     }
 
     .projectBox h3 {
         margin: 0;
-        font-weight: 300;
-        font-size: 3em;
         text-align: center;
-        color: #E01616;
+        color: var(--primary-color);
     }
 
     .projectBox p {
-        font-size: 1.6em;
-        margin: 1em 0;
+        font-size: 1.4em;
+        margin: 1.5em 0;
     }
 
     .projectBox .tags {
@@ -251,6 +268,12 @@ section {
             border-radius: .3em;
             background: rgba(224, 22, 22, 0.1);
             transition: all .1s ease-in-out;
+        }
+
+        .show-more-projects-link a,
+        .hide-more-projects-link a {
+            font-size: 1.2em;
+            padding-top: 2rem;
         }
 
 .former-project-experience {
@@ -273,13 +296,12 @@ section {
 
 
 #technologies {
-    background: #ba4242;
-    background: #4F1111;
+    background: var(--primary-color-dark);
     background-size: cover;
     color: #eee;
 }
 
-    #technologies h2 {
+    #technologies h3 {
         color: #fff;
     }
 
@@ -305,6 +327,8 @@ section {
 
         .technologyBox .technology:hover {
             transform: scale(1.05);
+            background-color: var(--primary-color);
+            color: white;
         }
 
 .technology.level5 {
@@ -346,62 +370,26 @@ section {
 }
 
 
-#bio {
-    text-align: center;
-}
-
-    #bio .container {
-        font-size: 1.6em;
-    }
-
-    #bio h3 {
-        margin: 1em 0 .6em;
-        font-size: 2em;
-    }
-
-    #bio img.photo-image {
-        width: 350px;
-    }
-
-    #bio a.photo-link {
-        border: none;
-        display: inline-block;
-        padding: .5em;
-        margin: 1em 0;
-        border-radius: 10px;
-        background-color: #f6f6f6;
-    }
-
-    #bio a.photo-link:hover {
-        border: none;
-        transform: scale(1.05, 1.05);
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-        background-color: #fff;
-    }
-
 
 #contact {
-    background: #FDB071;
+    background: white;
     text-align: center;
 }
 
+.bio-text {
+    margin: 2rem 0 3rem;
+    padding-bottom: 4rem;
+    border-bottom: solid 2px black;
+}
 
     #contact .contact-items {
         font-size: 1.8em;
         display: inline-block;
-        padding: 10px 30px;
-        border-radius: 10px;
-        background: rgba(255, 255, 255, .3);
-        transition: all .1s ease-in-out;
     }
-
-        #contact .contact-items:hover {
-            transform: scale(1.03, 1.03);
-            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-        }
 
     #contact h3 {
         font-size: 1.8em;
+        font-weight: 100;
         margin: 5px 0;
         padding: 0;
     }
