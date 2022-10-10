@@ -43,11 +43,10 @@ var updateMenu = function() {
     var $activityBoxes = $(".activity-box");
 
     function shouldBeHighlighted(x) {
-        return ($(this).offset().top > fromTop) && (($(this).offset().top + $(this).height()) <= fromTop + $(window).height());
+        return $(this).offset().top < fromTop + $(window).height() * .6;
     }
 
     var highlited = $activityBoxes.filter(shouldBeHighlighted);
-    $activityBoxes.removeClass("highlighted");
     highlited.addClass("highlighted");
 };
 
