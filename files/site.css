@@ -184,7 +184,7 @@ section {
 
 
 #what-i-do {
-    background: var(--primary-color-dark);
+    background: var(--secondary-color);
     color: var(--white-color);
     text-align: center;
 }
@@ -312,7 +312,7 @@ section {
 
 
 #technologies {
-    background: var(--primary-color-dark);
+    background: var(--secondary-color);
     background-size: cover;
     color: var(--white-color);
 }
