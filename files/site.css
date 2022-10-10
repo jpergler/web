@@ -521,3 +521,15 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+
+
+.plastic-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    backdrop-filter: blur(3px) opacity(.15);
+    z-index: 9999;
+}
