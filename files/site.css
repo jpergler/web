@@ -395,8 +395,12 @@ section {
 .bio-text {
     margin: 2rem 0 3rem;
     padding-bottom: 4rem;
-    border-bottom: solid 2px var(--black-color);
 }
+
+    #contact .profilePhoto {
+        height: 8em;
+        width: 20em;
+    }
 
     #contact .contact-items {
         font-size: 1.8em;
@@ -406,7 +410,7 @@ section {
     #contact h3 {
         font-size: 1.8em;
         font-weight: 100;
-        margin: 5px 0;
+        margin: .5em 0 .3em;
         padding: 0;
     }
 
