@@ -3,7 +3,11 @@
 :root {
     --primary-color: #e01616;
     --primary-color-dark: #4f1111;
+    --primary-transparent-background-color: #e016161a;
     --secondary-color: #ba4242;
+    --secondary-light-color: #ffefd0;
+    --black-color: black;
+    --white-color: white;
 }
 
 body {
@@ -38,7 +42,7 @@ h3 {
 
 
 .navbar-default .navbar-brand {
-    color: #000;
+    color: var(--black-color);
     font-size: 110%;
 }
 
@@ -60,8 +64,8 @@ h3 {
     .navbar-default .navbar-nav > .active > a:hover,
     .navbar-default .navbar-nav > .active > a:focus {
         background: #f6f6f6;
-        color: #e01616;
-        border-bottom-color: #e01616;
+        color: var(--primary-color-dark);
+        border-bottom-color: var(--primary-color-dark);
     }
 
 @media only screen and (max-width : 992px) {
@@ -105,16 +109,16 @@ h2 {
 }
 
 a {
-    color: #E01616;
+    color: var(--primary-color);
     border-bottom: solid 2px transparent;
     transition: all .1s ease-in-out;
     font-weight: bolder;
 }
 
     a:hover {
-        color: #9b0b0b;
+        color: var(--primary-color-dark);
         text-decoration: none;
-        border-color: #9b0b0b;
+        border-color: var(--primary-color-dark);
     }
 
     #intro a,
@@ -124,10 +128,10 @@ a {
     }
 
     a.btn-link {
-        color: #E01616;
+        color: var(--primary-color);
     }
     a.btn-link:hover {
-    color: #b80e0e;
+    color: var(--primary-color-dark);
     }
 
 section {
@@ -135,7 +139,7 @@ section {
 }
 
 #intro {
-    background: #fff;
+    background: var(--white-color);
     text-align: center;
     min-height: calc(100vh - 50px);
 }
@@ -143,7 +147,7 @@ section {
 .profilePhoto {
     background: url('img/jindrich-pergler.jpg') bottom center no-repeat;
     background-size: contain;
-    border-bottom: solid 2px #000;
+    border-bottom: solid 2px var(--black-color);
     margin-top: 15vh;
     height: 40vh;
 }
@@ -157,7 +161,7 @@ section {
 
 #intro .subtitle {
     font-weight: bold;
-    color: #e01616;
+    color: var(--primary-color);
     font-size: 4vh;
 }
 
@@ -180,7 +184,7 @@ section {
 
 #what-i-do {
     background: var(--primary-color-dark);
-    color: white;
+    color: var(--white-color);
     text-align: center;
 }
 
@@ -189,7 +193,7 @@ section {
         font-size: 2.2em;
         font-weight: bold;
         margin: .5em 0;
-        color: white
+        color: var(--white-color)
     }
 
     #what-i-do p {
@@ -207,7 +211,7 @@ section {
 
         #what-i-do .activity-box:hover,
         #what-i-do .activity-box.highlighted {
-            background-color: white;
+            background-color: var(--white-color);
             transform: scale(1.02, 1.02);
         }
 
@@ -223,13 +227,13 @@ section {
 
 
 #projects {
-    background: #FFEFD0;
+    background: var(--secondary-light-color);
     background-size: cover;
     height: auto;
 }
 
     #projects .container-box {
-        background: #fff;
+        background: var(--white-color);
         padding: 1em;
         margin: 5em 0;
     }
@@ -250,7 +254,7 @@ section {
 
     .projectBox:hover {
         transform: scale(1.03);
-        background: #fff;
+        background: var(--white-color);
         
     }
 
@@ -274,10 +278,10 @@ section {
         .former-project-experience .tags span {
             padding: .15em .30em;
             margin: .1em 0;
-            color: #e01616;
+            color: var(--primary-color);
             display: inline-block;
             border-radius: .3em;
-            background: rgba(224, 22, 22, 0.1);
+            background: var(--primary-transparent-background-color);
             transition: all .1s ease-in-out;
         }
 
@@ -309,11 +313,11 @@ section {
 #technologies {
     background: var(--primary-color-dark);
     background-size: cover;
-    color: #eee;
+    color: var(--white-color);
 }
 
     #technologies h3 {
-        color: #fff;
+        color: var(--white-color);
     }
 
 .technologyBox {
@@ -328,8 +332,8 @@ section {
         padding: .20em .40em;
         margin: .40em .35em;
         border-radius: .3em;
-        background: #fff;
-        color: #790000;
+        background: var(--white-color);
+        color: var(--primary-color-dark);
         font-size: 1.1em;
         font-weight: bold;
         box-shadow: 0 0 .2em rgba(0, 0, 0, .30);
@@ -339,7 +343,7 @@ section {
         .technologyBox .technology:hover {
             transform: scale(1.05);
             background-color: var(--primary-color);
-            color: white;
+            color: var(--white-color);
         }
 
 .technology.level5 {
@@ -383,14 +387,14 @@ section {
 
 
 #contact {
-    background: white;
+    background: var(--white-color);
     text-align: center;
 }
 
 .bio-text {
     margin: 2rem 0 3rem;
     padding-bottom: 4rem;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px var(--black-color);
 }
 
     #contact .contact-items {
@@ -435,7 +439,7 @@ section {
     #contact .subtitle {
         font-weight: bolder;
         font-size: 1.3em;
-        color: #E01616;
+        color: var(--primary-color);
     }
 
     #contact .email,
@@ -448,7 +452,7 @@ section {
     }
 
         #contact p a {
-            color: #E01616
+            color: var(--primary-color)
         }
 
 .contact-form {
@@ -466,7 +470,7 @@ section {
         border-width: .1em;
         box-shadow: none;
         border-radius: 2px;
-        border-color: #fff;
+        border-color: var(--white-color);
         transition: all .1s ease-in-out;
     }
 
