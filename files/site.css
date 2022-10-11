@@ -148,22 +148,23 @@ section {
     background: url('img/jindrich-pergler.jpg') bottom center no-repeat;
     background-size: contain;
     border-bottom: solid 2px var(--black-color);
-    height: 30vh;
-    width: 70vh;
+    height: calc(100px + 25vw);
+    max-height: 400px;
+    aspect-ratio: 5/3;
     margin-inline: auto;
 }
 
 
 #intro h1 {
-    font-size: 6vh;
+    font-size: 4em;
     font-weight: 300;
-    margin: 2.5vh 0;
+    margin: .5em 0;
 }
 
 #intro .subtitle {
     font-weight: bold;
     color: var(--primary-color);
-    font-size: 3.5vh;
+    font-size: 3em;
 }
 
 .showMore {
@@ -399,7 +400,6 @@ section {
 
     #contact .profilePhoto {
         height: 8em;
-        width: 20em;
     }
 
     #contact .contact-items {
