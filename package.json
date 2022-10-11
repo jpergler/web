@@ -3,6 +3,7 @@
         "parcel": "2.7.0"
     },
     "scripts": {
-        "start": "parcel index.html"
+        "start": "parcel index.html",
+        "build": "parcel build index.html"
     }
 }
