@@ -135,7 +135,7 @@ a {
     }
 
 section {
-    padding: 3em 0;
+    padding: 3em env(safe-area-inset-right) 3em env(safe-area-inset-left);
 }
 
 #intro {
@@ -405,6 +405,7 @@ section {
 #contact {
     background: var(--white-color);
     text-align: center;
+    margin-bottom: env(safe-area-inset-bottom);
 }
 
 .bio-text {
