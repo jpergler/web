@@ -190,6 +190,19 @@ section {
     text-align: center;
 }
 
+    @media (min-width: 992px) {
+        #what-i-do .activity-box-list {
+            display: flex;
+            align-items: stretch;
+            align-content: stretch;
+            gap: 30px;
+        }
+
+        #what-i-do .activity-box {
+            width: 32%;
+        }
+    }
+
 
     #what-i-do h3 {
         font-size: 2.2em;
@@ -209,7 +222,6 @@ section {
         padding: 1rem 2rem;
         margin: 2rem 0;
         border-radius: 10px;
-        height: 310px;
     }
 
         #what-i-do .activity-box:hover,
