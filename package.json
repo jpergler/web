@@ -1,9 +1,11 @@
 {
-    "devDependencies": {
-        "parcel": "2.7.0"
-    },
-    "scripts": {
-        "start": "parcel src/index.html",
-        "build": "parcel build src/index.html"
-    }
+  "devDependencies": {
+    "parcel": "2.7.0"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "build-public": "parcel build src/index.html --dist-dir build/public",
+    "clean-build-public": "rm -rf build/public"
+  }
 }
