@@ -87,6 +87,10 @@ h3 {
         font-size: 130%;
     }
 
+    .navbar-default .navbar-toggler {
+        margin-inline-end: 1rem;
+    }
+
     .navbar-default .container {
         padding-inline: 0;
     }
