@@ -1,4 +1,4 @@
-@import url("./fonts.css");
+@import url("fonts.css");
 
 :root {
     --primary-color: #e01616;
@@ -145,7 +145,7 @@ section {
 }
 
 .profilePhoto {
-    background: url('img/jindrich-pergler.jpg') bottom center no-repeat;
+    background: url('../img/jindrich-pergler.jpg') bottom center no-repeat;
     background-size: contain;
     border-bottom: solid 2px var(--black-color);
     height: calc(100px + 25vw);
@@ -172,7 +172,7 @@ section {
     width: calc(1em + 5vh);
     height: calc(1em + 5vh);
     margin-top: calc(-1em + 5vh);
-    background: url('img/arrow-down.svg') top center no-repeat;
+    background: url('../img/arrow-down.svg') top center no-repeat;
     background-size: cover;
     line-height: 1000em;
     overflow: hidden;
@@ -434,7 +434,7 @@ section {
     }
 
         #contact .links a {
-            background: url("linkedin.svg") top left no-repeat;
+            background: url("../img/linkedin.svg") top left no-repeat;
             background-size: contain;
             line-height: 1000rem;
             overflow: hidden;
@@ -450,10 +450,10 @@ section {
         }
 
         #contact .links .xing {
-            background-image: url("xing.svg");
+            background-image: url("../img/xing.svg");
         }
         #contact .links .cv {
-            background-image: url("pdf-cv.svg");
+            background-image: url("../img/pdf-cv.svg");
         }
 
     #contact .subtitle {
