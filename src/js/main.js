@@ -3,10 +3,9 @@
 // Menu handling and scrolling to sections
 ///////////////////////////////////////////////
 
-var topMenu = $(".navbar.navbar-fixed-top .nav"),
-    menuBar = $(".navbar.navbar-fixed-top .navbar-header"),
+var menuBar = $("nav.navbar.fixed-top"),
     topMenuHeight = menuBar.outerHeight(),
-    menuItems = topMenu.find("a"),
+    menuItems = $("nav.navbar .navbar-nav a"),
     scrollItems = menuItems.map(function(el) {
         var item = $($(this).attr("href"));
         if (item.length) {
@@ -37,8 +36,8 @@ var updateMenu = function() {
     cur = cur[cur.length - 1];
     var id = cur && cur.length ? cur[0].id : "";
     // Set/remove active class
-    menuItems.parent().removeClass("active")
-        .end().filter("[href='#" + id + "']").parent().addClass("active");
+    menuItems.removeClass("active")
+        .filter("[href='#" + id + "']").addClass("active");
 
     var $activityBoxes = $(".activity-box");
 

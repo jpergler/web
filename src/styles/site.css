@@ -50,19 +50,20 @@ h3 {
     background: #fff;
     border-bottom: none;
     box-shadow: 0 0 1.5em rgba(0,0,0,.1);
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
-    .navbar-default .navbar-nav a {
+    .navbar-default .navbar-nav a.nav-link {
         transition: background .5s, border-color .5s;
         font-weight: 400;
         border-bottom: solid .2em #fff;
+        padding: 15px;
     }
 
 
-    .navbar-default .navbar-nav > .active > a,
-    .navbar-default .navbar-nav > .active > a:hover,
-    .navbar-default .navbar-nav > .active > a:focus {
+    .navbar-default .navbar-nav a.active,
+    .navbar-default .navbar-nav a.active:hover,
+    .navbar-default .navbar-nav a.active:focus {
         background: #f6f6f6;
         color: var(--primary-color);
         border-bottom-color: var(--primary-color);
@@ -75,14 +76,25 @@ h3 {
 }
 
 @media only screen and (max-width : 768px) {
+    .navbar-default .navbar-nav {
+        border-top: solid #ddd 1px;
+    }
+
     .navbar-default .navbar-brand {
         height: auto;
         padding-block: 0.5rem;
+        padding-inline: 1rem;
         font-size: 130%;
     }
 
-    .navbar-default .navbar-nav a {
-        border-bottom: none;
+    .navbar-default .container {
+        padding-inline: 0;
+    }
+
+    .navbar-default .navbar-nav a,
+    .navbar-default .navbar-nav a.active:hover,
+    .navbar-default .navbar-nav a.active:focus {
+        border-bottom: none !important;
     }
 
     .navbar-default .navbar-brand .divider {
