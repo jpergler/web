@@ -50,13 +50,13 @@ var updateMenu = function() {
 };
 
 var showMoreProjects = function() {
-    $(".more-projects").removeClass("hidden");
-    $(".show-more-projects-link").addClass("hidden");
+    $(".more-projects").removeClass("visually-hidden");
+    $(".show-more-projects-link").addClass("visually-hidden");
 }
 
 var hideMoreProjects = function() {
-    $(".more-projects").addClass("hidden");
-    $(".show-more-projects-link").removeClass("hidden");
+    $(".more-projects").addClass("visually-hidden");
+    $(".show-more-projects-link").removeClass("visually-hidden");
 }
     
 $(window).scroll(updateMenu);
