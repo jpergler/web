@@ -151,6 +151,12 @@ a {
     a.btn-link:hover {
     color: var(--primary-color-dark);
     }
+    
+    .image-decorated {
+        box-shadow: 0 3px .8em rgba(0,0,0,.9);
+        --webkit-box-shadow: 0 0 1.5em rgba(0,0,0,.8);
+        border-radius: 7px;
+    }
 
 section {
     padding: 3em env(safe-area-inset-right) 3em env(safe-area-inset-left);
