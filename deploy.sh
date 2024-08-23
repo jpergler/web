@@ -18,6 +18,6 @@ git add -A
 git commit -m 'Deploy'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/jpergler/jpergler.github.io.git master:publish/pages
+git push -f https://github.com/jpergler/jpergler.github.io.git main:publish/pages
 
 cd -
