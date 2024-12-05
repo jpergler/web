@@ -1,5 +1,14 @@
-
 @import "bootstrap";
+
+@mixin shadow-on-hover {
+    transition: all .1s ease-in-out;
+
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+}
 
 :root {
     --primary-color: #e01616;
@@ -9,6 +18,7 @@
     --secondary-light-color: #ffefd0;
     --black-color: black;
     --white-color: white;
+    --text-color: #2c3e50;
 }
 
 body {
@@ -277,6 +287,8 @@ section {
     }
 
 .projectBox {
+    @include shadow-on-hover;
+
     background: rgba(255, 255, 255, .9);
     border-radius: .3em;
     color: #000;
@@ -580,4 +592,79 @@ footer {
     -webkit-backdrop-filter: blur(3px) opacity(.15);
     backdrop-filter: blur(3px) opacity(.15);
     z-index: 9999;
+}
+
+/* References Section Styles */
+#references {
+    background-color: white;
+    position: relative;
+    padding: 6rem 0;
+}
+
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.reference-box {
+    @include shadow-on-hover;
+    
+    background: var(--secondary-light-color);
+    padding: 3rem;
+    border-radius: 8px;
+    border: 1px solid #ba424279;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.reference-text {
+    flex-grow: 1;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.reference-author {
+    margin-top: auto;
+    
+    strong {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+    }
+}
+
+.reference-position {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    #references {
+        padding: 4rem 0;
+    }
+
+    .references-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .reference-box {
+        padding: 2rem;
+    }
+
+    .reference-text {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .reference-author strong {
+        font-size: 1.1rem;
+    }
 }
