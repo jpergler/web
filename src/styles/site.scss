@@ -626,7 +626,7 @@ footer {
     margin-bottom: 2rem;
     font-size: 1.2rem;
     line-height: 1.6;
-    color: var(--text-color);
+    color: black;
 }
 
 .reference-author {
@@ -636,12 +636,11 @@ footer {
         display: block;
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
-        color: var(--text-color);
     }
 }
 
 .reference-position {
-    color: var(--text-color);
+    color: black;
     opacity: 0.8;
     font-size: 1rem;
 }
